@@ -1,7 +1,31 @@
+nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
 ul {
     display: flex;
 }
 
 ul li {
     padding: 10px;
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.nav-left {
+    float: left;
+    background-color: yellow;
+}
+
+.nav-right {
+    background-color: orange;
+}
+
+.nav-right ul {
+     float: right;
+     padding:10px;
 }
