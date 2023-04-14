@@ -18,11 +18,11 @@ ul li a {
 
 .nav-left {
     float: left;
-    background-color: yellow;
+    background-color: rgb(187, 179, 179);
 }
 
 .nav-right {
-    background-color: orange;
+    background-color: rgb(157, 157, 233);
 }
 
 .nav-right ul {

@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Sign up</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" placeholder="STUDENT USERNAME" class="form-control input-type-text" id="username" name="username" [(ngModel)]="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" placeholder="PASSWORD"  class="form-control input-type-text" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <div class="form-group">
+        <label for="department">Department</label>
+        <select class="form-control" id="department" name="department" [(ngModel)]="department" required>
+            <option class="input-type-text" value="" disabled selected hidden>SELECT YOUR DEPARTMENT</option>
+            <option *ngFor="let dep of departments" [value]="dep">{{dep}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="studentid">Student ID Number</label>
+        <input type="text" placeholder="JNUMBER" class="form-control input-type-text" id="studentid" name="studentid" [(ngModel)]="studentIdNumber" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Sign up</button>
+    </form>
+  </div>
+  

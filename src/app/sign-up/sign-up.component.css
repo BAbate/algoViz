@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0  10px 0;
+}
+
+
+
+h2, label  {
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.input-type-text {
+    height:25px;
+    padding:5px;
+    border-radius: 5px;
+}
+
+input {
+    background-color:  rgb(212, 212, 247);
+}
+
+select, option {
+    background-color:  rgb(212, 212, 247);
+    height:40px;
+    border-radius: 5px;
+}
