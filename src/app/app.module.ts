@@ -1,3 +1,4 @@
+import { ModuleCard } from './module-card/module-card.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatButtonModule } from '@angular/material/button'
@@ -12,8 +13,12 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ModuleCardComponent } from './module-card/module-card.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { PreAssessmentComponent } from './pre-assessment/pre-assessment.component';
+import { PostAssesmentComponent } from './post-assesment/post-assesment.component';
+import { DeveloperToolsComponent } from './developer-tools/developer-tools.component';
+
 
 @NgModule({
   declarations: [
@@ -23,8 +28,10 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     ContactComponent,
     HomeComponent,
     LoginComponent,
-    ModuleCardComponent,
-    SignUpComponent
+    SignUpComponent,
+    PreAssessmentComponent,
+    PostAssesmentComponent,
+    DeveloperToolsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     HttpClientModule,
     FormsModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    ModuleCard,
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

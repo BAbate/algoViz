@@ -1,12 +1,53 @@
 <div class="card-module">
-   <div>
-
+   <div class="card-header">
+     <h2>ADAPTIVE LEARNING FOR DATA STRUCTURES</h2>
+     <div class="header-desc">
+       <div class="level"> Intermidate</div>
+       <div class="challenges">75 questions</div>
+       <div class="hours">2hrs </div>
+     </div>
+     <div class="takeaways">
+       <div class="first">
+         <li> Learning data structures and algorithms can improve your problem-solving skills, which is a critical skill for any programmer.</li>
+         <li> Understanding data structures and algorithms can boost your career prospects by demonstrating your ability to solve complex problems and write efficient code.</li>
+         <li> Data structures and algorithms knowledge helps you optimize code efficiency, making it run faster and use less memory.</li>
+       </div>
+       <div class="second">
+        <li>  Knowing data structures and algorithms helps you understand how popular programming libraries and frameworks work, enabling you to use them more effectively.</li>
+        <li>  Learning data structures and algorithms helps you prepare for technical interviews, which often involve questions about these topics.</li>
+        <li>  Data structures and algorithms are at the heart of computer science, and understanding them can help you develop a deeper understanding of modern computing principles.</li>
+       </div> 
+     </div>
    </div>
-  <div>
-   <p>Algorithm</p>
-   <p>215 Students</p>
-   <p>2h 30m</p>
-   <p *ngIf='!completed'>Progress</p>
-   <p *ngIf='completed'>Completed</p>
+
+   <app-side-nav></app-side-nav>
+
+   <div class="content-container">
+    <div class="course-contents">
+      <h2>COURSE CONTENTS</h2>
+      <div class="list-of-contents" *ngFor="let item of users">
+       <mat-accordion>
+         <mat-expansion-panel (opened)="panelOpenState = true"
+                              (closed)="panelOpenState = false">
+           <mat-expansion-panel-header>
+             <mat-panel-title>
+               {{item.dataStructure}}
+             </mat-panel-title>
+             <mat-panel-description class="expandable-text">
+               {{item.description}}
+             </mat-panel-description>
+           </mat-expansion-panel-header>
+           <ul>
+             <li *ngFor="let URL of item.URL">
+              <a [href]="sanitizeUrl(URL.description)">{{ URL.description }}</a>
+              <a [href]="sanitizeUrl(URL.leetcode)">{{ URL.leetcode }}</a>
+              <p>Difficulty: {{ URL.difficulty }}</p>
+             </li>
+           </ul>
+         </mat-expansion-panel>
+       </mat-accordion>
+      </div>
+    </div>
   </div>
-</div>
+   </div>
+   

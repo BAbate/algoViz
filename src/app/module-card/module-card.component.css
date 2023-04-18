@@ -1,0 +1,53 @@
+.card-header{
+    margin-left: 250px;
+}
+
+.header-desc{
+    display: flex;
+    margin-bottom:10px;
+ 
+}
+
+.header-desc > div{
+    padding: 10px;
+}
+
+.takeaways{
+    display: flex;
+}
+
+.first > li{
+    margin:10px;
+}
+
+.second > li {
+    margin: 10px;
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-contents{
+    margin-top:30px ;
+    background-color: yellow;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-of-contents{
+    width: 750px;
+}
+
+.expandable-text {
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none;
+}

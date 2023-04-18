@@ -1,0 +1,68 @@
+[
+    {
+      "id": 1,
+      "dataStructure": "Linked List",
+      "description": "linked list construction",
+      "URL": [
+        {
+          "description": "https://www.geeksforgeeks.org/adding-angular-material-component-to-angular-application/",
+          "leetcode": "https://leetcode.com/problems/two-sum/",
+          "difficulty": "Easy"
+        },
+        {
+          "description": "https://www.geeksforgeeks.org/adding-angular-material-component-to-angular-application/",
+          "leetcode": "https://leetcode.com/problems/two-sum/",
+          "difficulty": "hard"
+        },
+        {
+          "description": "https://www.geeksforgeeks.org/adding-angular-material-component-to-angular-application/",
+          "leetcode": "https://leetcode.com/problems/two-sum/",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "dataStructure": "Stack ",
+      "description": "Stack construction",
+      "URL": [
+        {
+          "description": "https://www.geeksforgeeks.org/adding-angular-material-component-to-angular-application/",
+          "leetcode": "https://leetcode.com/problems/two-sum/",
+          "difficulty": "Easy"
+        },
+        {
+          "description": "https://www.geeksforgeeks.org/adding-angular-material-component-to-angular-application/",
+          "leetcode": "https://leetcode.com/problems/two-sum/",
+          "difficulty": "hard"
+        },
+        {
+          "description": "https://www.geeksforgeeks.org/adding-angular-material-component-to-angular-application/",
+          "leetcode": "https://leetcode.com/problems/two-sum/",
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "dataStructure": "Queue",
+      "description": "QUeue list construction",
+      "URL": [
+        {
+          "description": "https://www.geeksforgeeks.org/adding-angular-material-component-to-angular-application/",
+          "leetcode": "https://leetcode.com/problems/two-sum/",
+          "difficulty": "Easy"
+        },
+        {
+          "description": "https://www.geeksforgeeks.org/adding-angular-material-component-to-angular-application/",
+          "leetcode": "https://leetcode.com/problems/two-sum/",
+          "difficulty": "hard"
+        },
+        {
+          "description": "https://www.geeksforgeeks.org/adding-angular-material-component-to-angular-application/",
+          "leetcode": "https://leetcode.com/problems/two-sum/",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]

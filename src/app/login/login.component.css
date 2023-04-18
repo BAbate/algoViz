@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, label  {
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.input-type-text {
+    height:25px;
+    padding:5px;
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color:  rgb(212, 212, 247);
+}
