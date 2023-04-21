@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-sign-up',
@@ -16,8 +17,9 @@ export class SignUpComponent {
   constructor(){
 
   }
-  onSubmit() {
+  onSubmit(form: NgForm) {
     // Handle form submission
+    console.log(form.value);
   }
 
 }

@@ -1,16 +1,18 @@
    <nav>
      <div class="nav-left">
-        <ul >
-          <li><a routerLink="/">HOME</a></li>
-          <li><a routerLink="/about">ABOUT</a></li>
-          <li><a routerLink="/contact">CONTACT</a></li>
-          <li><a routerLink="/signup">SIGN UP</a></li>
-          <li><a routerLink="/module">Courses</a></li>
+        <ul>
+          <li *ngIf="isLoggedIn"><a routerLink="/">HOME</a></li>
+          <li *ngIf="isLoggedIn"><a routerLink="/about">ABOUT</a></li>
+          <li *ngIf="isLoggedIn"><a routerLink="/contact">CONTACT</a></li>
+          <li *ngIf="isLoggedIn"><a routerLink="/module">Courses</a></li>
+          <li *ngIf="isLoggedIn"><a routerLink="/progress">Progress</a></li>
         </ul>
     </div>
     <div class="nav-right">
       <ul>
-        <li><a routerLink="/login">LOGIN</a></li>
+        <li *ngIf="!isLoggedIn"><a routerLink="/signup">SIGN UP</a></li>
+        <li *ngIf="!isLoggedIn"><a routerLink="/login">LOGIN</a></li>
+        <li *ngIf="isLoggedIn"><button (click)=logout()>LOGOUT</button></li>
       </ul>     
     </div> 
    </nav>

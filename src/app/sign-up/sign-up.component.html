@@ -1,6 +1,6 @@
 <div class="container">
     <h2>Sign up</h2>
-    <form (ngSubmit)="onSubmit()">
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm">
       <div class="form-group">
         <label for="username">Username</label>
         <input type="text" placeholder="STUDENT USERNAME" class="form-control input-type-text" id="username" name="username" [(ngModel)]="username" required>

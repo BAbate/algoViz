@@ -1,3 +1,4 @@
+import { AuthServiceService } from './auth-service.service';
 import { ModuleCard } from './module-card/module-card.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -18,7 +19,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { PreAssessmentComponent } from './pre-assessment/pre-assessment.component';
 import { PostAssesmentComponent } from './post-assesment/post-assesment.component';
 import { DeveloperToolsComponent } from './developer-tools/developer-tools.component';
-
+import { ProgressComponent } from './progress/progress.component';
+import { MatTableModule } from '@angular/material/table' 
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { DeveloperToolsComponent } from './developer-tools/developer-tools.compo
     SignUpComponent,
     PreAssessmentComponent,
     PostAssesmentComponent,
-    DeveloperToolsComponent
+    DeveloperToolsComponent,
+    ProgressComponent
   ],
   imports: [
     BrowserModule,
@@ -41,9 +44,11 @@ import { DeveloperToolsComponent } from './developer-tools/developer-tools.compo
     MatButtonModule,
     ModuleCard,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule
   ],
-  providers: [],
+
+  providers: [AuthServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

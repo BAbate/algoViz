@@ -39,8 +39,8 @@
            </mat-expansion-panel-header>
            <ul>
              <li *ngFor="let URL of item.URL">
-              <a [href]="sanitizeUrl(URL.description)">{{ URL.description }}</a>
-              <a [href]="sanitizeUrl(URL.leetcode)">{{ URL.leetcode }}</a>
+              <a [href]="sanitizeUrl(URL.description)">Description</a><br>
+              <a [href]="sanitizeUrl(URL.leetcode)">Leetcode</a>
               <p>Difficulty: {{ URL.difficulty }}</p>
              </li>
            </ul>

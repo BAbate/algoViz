@@ -1,6 +1,6 @@
 <div class="container">
   <h2>Login</h2>
-  <form (ngSubmit)="login()" class="form-group">
+  <form (ngSubmit)="login(form)" class="form-group" #form="ngForm">
     <label style="margin-top:10px;">
       Username</label>
       <input type="text" name="username" class="input-type-text" [(ngModel)]="username">
